@@ -133,7 +133,7 @@ Not modelled: the free tier, volume pricing tiers, Savings Plans, provisioned co
 | `at-memory-limit` | An invocation used all of the configured memory. The function may be getting killed for running out of memory; the suggestion is an increase. |
 | `near-memory-limit` | Highest usage is at least 90% of the configured memory. |
 | `timed-out xN` | N invocations timed out (log file input only). |
-| `near-timeout` | Longest duration is at least 90% of the timeout (needs `--timeout`, or a timeout seen in a log file). |
+| `near-timeout` | Longest duration is at least 90% of the timeout (needs `--timeout`). |
 | `kept: timeouts` | A decrease was possible on memory alone but was not suggested, because the function is timing out or close to it and less memory means less CPU. |
 | `memory-changed-in-sample` | The input has more than one configured memory size for this function. The most common one is treated as current. |
 | `small-sample` | Fewer invocations than `--min-invocations`. |
